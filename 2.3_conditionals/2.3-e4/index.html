@@ -7,6 +7,21 @@
     <title>Conversor de edad perruna</title>
   </head>
   <body>
+    <main>
+      <h1>Conversor de edad perruna a edad humana</h1>
+      <form action="./main.js" method="GET">
+        <label for="dogAge">Años de tu perro</label>
+        <input
+          type="number"
+          name="enterYourDogAge"
+          id="dogAge"
+          class="js-dogAge"
+          max="20"
+          min="0"
+        />
+      </form>
+      <p class="result js-humanAge"></p>
+    </main>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

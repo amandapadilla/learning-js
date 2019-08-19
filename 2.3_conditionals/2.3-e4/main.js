@@ -7,6 +7,23 @@
 const firstYear = 15;
 const secondYear = 9;
 const plusThird = 5;
-let dogAge;
 
-if ()
+let dogAge = document.querySelector(".js-dogAge");
+let humanAge = document.querySelector(".js-humanAge");
+
+dogAge.addEventListener("change", function() {
+  if (dogAge.value === "") {
+    humanAge.innerHTML = ``;
+  } else if (dogAge.value < 1) {
+    humanAge.innerHTML = `Tu perro tiene menos de ${firstYear} años humanos`;
+  } else if (dogAge.value < 2) {
+    humanAge.innerHTML = `Tu perro tiene ${firstYear} años humanos`;
+  } else if (dogAge.value === 2) {
+    humanAge.innerHTML = `Tu perro tiene ${firstYear +
+      secondYear} años humanos`;
+  } else {
+    humanAge.innerHTML = `Tu perro tiene ${firstYear +
+      secondYear +
+      plusThird * (dogAge.value - 2)} años humanos`;
+  }
+});
