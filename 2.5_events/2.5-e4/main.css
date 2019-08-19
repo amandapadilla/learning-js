@@ -1,0 +1,17 @@
+.firstColor {
+  background-color: pink;
+  color: purple;
+  /* height: 250px; */
+}
+
+.secondColor {
+  background-color: cornflowerblue;
+  color: darkgoldenrod;
+  /* height: 250px; */
+}
+
+.secondColor {
+  background-color: darkgrey;
+  color: darkcyan;
+  /* height: 250px; */
+}
